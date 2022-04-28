@@ -11,6 +11,8 @@
   },
   "rules": {
     "global-require": "off",
-    "import/no-dynamic-require": "off"
+    "import/no-dynamic-require": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off"
   }
 }

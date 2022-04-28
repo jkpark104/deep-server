@@ -1,7 +1,7 @@
-exports.getBmi = (payload) => {
+export const getBmi = (payload) => {
   const { name, height, weight } = payload;
 
-  const bmi = +weight / (+height) ** 2;
+  const bmi = +weight / (+height / 100) ** 2;
   const bmiPercentage = Math.round(bmi * 100) / 100;
 
   const result = { name, height, weight };
